@@ -1,4 +1,4 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import Link from "next/link";
 
 export function MySection() {
@@ -11,10 +11,14 @@ export function MySection() {
             <Flex
                 w="1120px"
                 m="0 auto"
-                bg="#c1c1c1"
             >
-                <Link href="#">
-                    <Text fontFamily="zilla-slab" fontSize="64px" mt="300px">Casamentos</Text>
+                <Link href="#" style={{ height:'100px', marginTop:"300px" }}>
+                    <Flex
+                        fontFamily="Zilla Slab"
+                        fontSize="64px"
+                    >
+                        Casamentos
+                    </Flex>
                 </Link>
             </Flex>
         </Flex>
