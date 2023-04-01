@@ -959,6 +959,11 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.3.0.tgz#ea89004119dc42db2e1dba0f97d553f7372f6fcb"
   integrity sha512-AHPmaAx+RYfZz0eYu6Gviiagpmiyw98ySSlQvCUhVGDRtDFe4DBS0x1bSjdF3gqUDYOczB+yYvBTtEylYSdRhg==
 
+"@fontsource/zilla-slab@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/zilla-slab/-/zilla-slab-4.5.9.tgz#67951da49bc4149f1a15a01173cde3022fa3490e"
+  integrity sha512-gTZSx1DEribXaB1uDEddqr6DhEoikUuM5SAOx1OwdSmg+Im2y97fAYxbJzFUZ+AX8seLCAIP2uT5RS4J3nOG4g==
+
 "@next/env@13.2.4":
   version "13.2.4"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-13.2.4.tgz#8b763700262b2445140a44a8c8d088cef676dbae"

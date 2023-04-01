@@ -1,4 +1,5 @@
 'use client'
+import "@fontsource/zilla-slab"
 import '@/styles/globals.css'
 import { ChakraProvider } from '@chakra-ui/react'
 import type { AppProps } from 'next/app'
