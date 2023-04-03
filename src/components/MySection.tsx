@@ -9,7 +9,6 @@ const linksData = [
 ]
 
 export function MySection() {
-    console.log(linksData)
     return (
         <>
             {linksData.map((item, index) => (
