@@ -15,14 +15,18 @@ const images = [
 ]
 
 export function Carousel() {
+    const swiperOptions = {
+        speed: 900,
+    }
     return (
         <Swiper
+        {...swiperOptions}
         slidesPerView={1}
         effect={"fade"}
         loop={true}
         centeredSlides={true}
         autoplay={{
-            delay: 3000,
+            delay: 4000,
             waitForTransition: true,
         }}
         pagination={{
