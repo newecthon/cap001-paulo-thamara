@@ -1,5 +1,4 @@
 import { Flex, Image, Text } from "@chakra-ui/react";
-import { HiOutlineArrowUpRight } from "react-icons/hi2";
 import Link from "next/link";
 
 const linksData = [
@@ -26,6 +25,7 @@ export function MySection() {
                         bgSize="cover"
                         bgPos="center"
                         bgRepeat="no-repeat"
+                        bgClip="border-box"
                     />
                 <Flex
                     w="1120px"

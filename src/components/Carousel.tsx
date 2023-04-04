@@ -36,7 +36,7 @@ export function Carousel() {
                 <SwiperSlide key={index}>
                     <Image
                         w='100%'
-                        h='100vh'
+                        h='90vh'
                         bgImage={img.url}
                         bgSize="cover"
                         bgPos="center"
