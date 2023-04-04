@@ -1,4 +1,5 @@
-import { Flex, Image } from "@chakra-ui/react";
+import { Flex, Image, Text } from "@chakra-ui/react";
+import { HiOutlineArrowUpRight } from "react-icons/hi2";
 import Link from "next/link";
 
 const linksData = [
@@ -36,8 +37,12 @@ export function MySection() {
                         <Flex
                             fontFamily="Zilla Slab"
                             fontSize="64px"
+                            align="center"
+                            color="#ffffff45"
+                            _hover={{ color: "white", ml: "16px", transition:"1s"}}
+                            className="item-menu-section"
                         >
-                            {item.label}
+                            <Text>{item.label}</Text>
                         </Flex>
                     </Link>
                 </Flex>
