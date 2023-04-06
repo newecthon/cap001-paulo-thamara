@@ -19,10 +19,10 @@ import {
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
 const Links = [
-  'Home',
-  'Portfolio',
-  'Sobre',
-  'Contato',
+  {label: 'Home', page:'/'},
+  {label: 'Portfolio', page:'portfolio'},
+  {label: 'Sobre', page:'sobre'},
+  {label: 'Contato', page:'contato'},
 ];
 
 const NavLink = ({ children }: { children: ReactNode }) => (
@@ -54,8 +54,8 @@ export function Header() {
               as={'nav'}
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+              {Links.map((item) => (
+                <NavLink key={item.page}>{item.label}</NavLink>
               ))}
             </HStack>
             </Menu>
@@ -72,8 +72,8 @@ export function Header() {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+              {Links.map((item) => (
+                <NavLink key={item.label}>{item.label}</NavLink>
               ))}
             </Stack>
           </Box>

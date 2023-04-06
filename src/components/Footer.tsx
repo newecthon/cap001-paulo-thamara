@@ -11,6 +11,13 @@ import {
   import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
   import { ReactNode } from 'react';
   
+  const Links = [
+    {label: 'Home', page:'/'},
+    {label: 'Portfolio', page:'portfolio'},
+    {label: 'Sobre', page:'sobre'},
+    {label: 'Contato', page:'contato'},
+  ];
+
   const Logo = (props: any) => {
     return (
       <svg
@@ -75,10 +82,10 @@ import {
           align={'center'}>
           <Logo />
           <Stack direction={'row'} spacing={6}>
-            <Link href={'#'}>Home</Link>
-            <Link href={'#'}>About</Link>
-            <Link href={'#'}>Blog</Link>
-            <Link href={'#'}>Contact</Link>
+            {Links.map(item => (
+              <Link key={item.label} href={item.page}>{item.label}</Link>
+            ))}
+            
           </Stack>
         </Container>
   
