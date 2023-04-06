@@ -1,4 +1,4 @@
-import { Flex, Image, Text } from "@chakra-ui/react";
+import { Flex, Image, LinkBox, Text, background } from "@chakra-ui/react";
 import Link from "next/link";
 
 const linksData = [
@@ -12,41 +12,39 @@ export function MySection() {
     return (
         <>
             {linksData.map((item, index) => (
+            <Link href={item.page}>
                 <Flex
-                key={index}
-                w="100%"
-                h="500px"
-                margin="16px 0"
-            >
-                <Image
-                        w='100%'
-                        h='auto'
-                        bgImage={item.img}
-                        bgSize="cover"
-                        bgPos="center"
-                        bgRepeat="no-repeat"
-                        bgClip="border-box"
-                    />
-                <Flex
-                    w="1120px"
-                    m="0 auto"
-                    position="absolute"
-                    marginLeft="300px"
+                    key={index}
+                    w="100%"
+                    h="500px"
+                    margin="16px 0"
+                    bgImage={item.img}
+                    bgSize="cover"
+                    bgPos="center"
+                    bgRepeat="no-repeat"
+                    bgClip="border-box"
                 >
-                    <Link href={item.page} style={{ height:'100px', marginTop:"300px", color:"white" }}>
-                        <Flex
+                    <Flex as="a"
+                        w="1120px"
+                        m="0 auto"
+                        align="center"
+                    >
+                        <Text
+                            w="100%"
+                            color="#FFFFFF45"
                             fontFamily="Zilla Slab"
                             fontSize="64px"
-                            align="center"
-                            color="#ffffff45"
-                            _hover={{ color: "white", ml: "16px", transition:"1s"}}
-                            className="item-menu-section"
+                            _hover={{
+                                color: "white",
+                                ml: "16px",
+                                transition:"1s",
+                            }}
                         >
-                            <Text>{item.label}</Text>
-                        </Flex>
-                    </Link>
-                </Flex>
-            </Flex>
+                            {item.label}
+                        </Text>
+                    </Flex>
+                    </Flex>
+            </Link>    
             ))}
         </>
     )
