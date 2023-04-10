@@ -1,17 +1,12 @@
 import { ReactNode } from 'react';
+import NextLink from 'next/link'
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
   Link,
   IconButton,
-  Button,
   Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
   Stack,
@@ -55,7 +50,7 @@ export function Header() {
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
               {Links.map((item) => (
-                <NavLink key={item.page}>{item.label}</NavLink>
+                <NextLink key={item.page} href={item.page}>{item.label}</NextLink>
               ))}
             </HStack>
             </Menu>
