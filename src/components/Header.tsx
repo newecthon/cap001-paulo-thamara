@@ -10,6 +10,9 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
+  textDecoration,
+  background,
+  color,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
@@ -50,7 +53,22 @@ export function Header() {
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
               {Links.map((item) => (
-                <NextLink key={item.page} href={item.page}>{item.label}</NextLink>
+                <NextLink
+                  key={item.page}
+                  href={item.page}
+                  className='nav-link'
+                  // style={{
+                  //   padding: '4px 16px',
+                  //   background: 'gray',
+                  //   borderRadius: '8px',
+                  //   textDecoration: 'none',
+                  //   // _hover: {{
+                  //   //   background: useColorModeValue('gray.200', 'gray.700'),
+                  //   // }}
+                  // }}
+                >
+                  {item.label}
+                </NextLink>
               ))}
             </HStack>
             </Menu>
