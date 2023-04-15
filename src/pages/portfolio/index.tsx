@@ -9,7 +9,18 @@ export default function Portfolio() {
             height="auto"
         >   
             <Header />
-            
+            <Flex
+                    w="100%"
+                    h="auto"
+                >
+                    <Flex flexWrap="wrap"
+                        w="1120px"
+                        h="700px"
+                        bg="red"
+                        margin="0 auto"
+                    >
+                    </Flex>
+                </Flex>
             <Footer />
         </Flex>
     )

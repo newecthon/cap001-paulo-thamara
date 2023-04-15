@@ -1,6 +1,6 @@
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { Flex } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 
 export default function Contact() {
     return (
@@ -9,7 +9,7 @@ export default function Contact() {
             height="auto"
         >   
             <Header />
-                <h1>Contato</h1>
+                <Text>Contato</Text>
             <Footer />
         </Flex>
     )
