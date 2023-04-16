@@ -5,8 +5,10 @@ import { Flex, Image, Text } from "@chakra-ui/react";
 export default function About() {
     return (
         <Flex
-            direction="column"
+            w="100%"
             height="auto"
+            direction="column"
+            bg="red"
         >   
             <Header />
             <Flex
@@ -16,10 +18,12 @@ export default function About() {
                 direction="column"
             >  
                 <Flex
-                    w="100%"
+                    w={{base: "100%", md: "100%", lg:"1120px"}}
+                    direction={{ base: "column", md:"column", lg: "row" }}
                     p="16px"
                     align={"center"}
                     gap="32px"
+                    bg="purple"
                 >
                     <Image w="400px" src="https://github.com/newecthon.png" />   
                     <Flex
@@ -45,6 +49,7 @@ export default function About() {
 
                 <Flex
                     w="100%"
+                    direction={{ base: "column-reverse", md:"column-reverse", lg: "row" }}
                     p="16px"
                     gap="32px"
                 >
