@@ -13,6 +13,7 @@ import {
   textDecoration,
   background,
   color,
+  Text,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
@@ -48,29 +49,32 @@ export function Header() {
           
           <Flex alignItems={'center'}>
             <Menu>
-            <HStack
+            <Flex
               as={'nav'}
-              spacing={4}
-              display={{ base: 'none', md: 'flex' }}>
+              gap="16px"
+              display={{ base: 'none', md: 'flex' }}
+            >
               {Links.map((item) => (
                 <NextLink
                   key={item.page}
                   href={item.page}
-                  className='nav-link'
-                  // style={{
-                  //   padding: '4px 16px',
-                  //   background: 'gray',
-                  //   borderRadius: '8px',
-                  //   textDecoration: 'none',
-                  //   // _hover: {{
-                  //   //   background: useColorModeValue('gray.200', 'gray.700'),
-                  //   // }}
-                  // }}
                 >
-                  {item.label}
+                  <Text
+                  style={{
+                    padding: '4px 16px',
+                    background: 'gray.700',
+                    borderRadius: '8px',
+                    textDecoration: 'none',
+                  }}
+                   _hover = {{
+                      background: useColorModeValue('gray.200', 'gray.700'),
+                    }}
+                  >
+                    {item.label}
+                  </Text>
                 </NextLink>
               ))}
-            </HStack>
+            </Flex>
             </Menu>
           </Flex>
           <IconButton
