@@ -90,7 +90,7 @@ export function Header() {
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
               {Links.map((item) => (
-                <NavLink key={item.label}>{item.label}</NavLink>
+                <NextLink key={item.label} href={item.page}>{item.label}</NextLink>
               ))}
             </Stack>
           </Box>
