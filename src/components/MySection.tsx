@@ -20,12 +20,14 @@ export function MySection() {
                     h="500px"
                     margin="16px 0"
                     bgImage={item.img}
+                    filter="grayscale(100%)"
                     bgSize="cover"
                     bgPos="center"
                     bgRepeat="no-repeat"
                     bgClip="border-box"
+                    transition="0.3s"
                     _hover={{
-                        
+                        filter:"grayscale(0%)"
                     }}
                 >
                     <Flex as="a"
@@ -37,6 +39,7 @@ export function MySection() {
                             display="flex"
                             align="center"
                             w="100%"
+                            height="100%"
                             color="#FFFFFF45"
                             fontFamily="Zilla Slab"
                             fontSize="64px"
