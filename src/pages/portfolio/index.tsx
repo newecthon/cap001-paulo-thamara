@@ -9,22 +9,126 @@ export default function Portfolio() {
             width="100%"
             height="auto"
             direction="column"
-            background={"red"}
         >   
             <Header />
             <Flex
                     w="100%"
                     h="auto"
                 >
-                    <Flex flexWrap="wrap"
-                        w="1120px"
+                    <Flex
+                        maxW="1440px"
                         h="auto"
-                        bg="red"
+                        flexWrap="wrap"
+                        justify={{base:"center", md:"center", lg: "center"}}
                         margin="64px auto"
                         gap="16px"
+                        bg="Highlight"
                     >
                         <Flex
-                            w={{base: "100%", md:"100%", lg: "384px"}}
+                            w="348px"
+                            h="450px"
+                            backgroundImage={myImg}
+                            backgroundSize={"cover"}
+                            backgroundRepeat={"no-repeat"}
+                            backgroundPosition={"center"}
+                            justify={"center"}
+                            align={"center"}
+                        >
+                            <Text>Paulo & Thamara</Text>
+                        </Flex>
+                        <Flex
+                            w="348px"
+                            h="450px"
+                            backgroundImage={myImg}
+                            backgroundSize={"cover"}
+                            backgroundRepeat={"no-repeat"}
+                            backgroundPosition={"center"}
+                            justify={"center"}
+                            align={"center"}
+                            
+                        >
+                            <Text>Paulo & Thamara</Text>
+                        </Flex>
+                        <Flex
+                            w="348px"
+                            h="450px"
+                            backgroundImage={myImg}
+                            backgroundSize={"cover"}
+                            backgroundRepeat={"no-repeat"}
+                            backgroundPosition={"center"}
+                            justify={"center"}
+                            align={"center"}
+                            
+                        >
+                            <Text>Paulo & Thamara</Text>
+                        </Flex>
+                        <Flex
+                            w="348px"
+                            h="450px"
+                            backgroundImage={myImg}
+                            backgroundSize={"cover"}
+                            backgroundRepeat={"no-repeat"}
+                            backgroundPosition={"center"}
+                            justify={"center"}
+                            align={"center"}
+                            
+                        >
+                            <Text>Paulo & Thamara</Text>
+                        </Flex>
+                        <Flex
+                            w="348px"
+                            h="450px"
+                            backgroundImage={myImg}
+                            backgroundSize={"cover"}
+                            backgroundRepeat={"no-repeat"}
+                            backgroundPosition={"center"}
+                            justify={"center"}
+                            align={"center"}
+                            
+                        >
+                            <Text>Paulo & Thamara</Text>
+                        </Flex>
+                        <Flex
+                            w="348px"
+                            h="450px"
+                            backgroundImage={myImg}
+                            backgroundSize={"cover"}
+                            backgroundRepeat={"no-repeat"}
+                            backgroundPosition={"center"}
+                            justify={"center"}
+                            align={"center"}
+                            
+                        >
+                            <Text>Paulo & Thamara</Text>
+                        </Flex>
+                        <Flex
+                            w="348px"
+                            h="450px"
+                            backgroundImage={myImg}
+                            backgroundSize={"cover"}
+                            backgroundRepeat={"no-repeat"}
+                            backgroundPosition={"center"}
+                            justify={"center"}
+                            align={"center"}
+                            
+                        >
+                            <Text>Paulo & Thamara</Text>
+                        </Flex>
+                        <Flex
+                            w="348px"
+                            h="450px"
+                            backgroundImage={myImg}
+                            backgroundSize={"cover"}
+                            backgroundRepeat={"no-repeat"}
+                            backgroundPosition={"center"}
+                            justify={"center"}
+                            align={"center"}
+                            
+                        >
+                            <Text>Paulo & Thamara</Text>
+                        </Flex>
+                        <Flex
+                            w="348px"
                             h="450px"
                             backgroundImage={myImg}
                             backgroundSize={"cover"}

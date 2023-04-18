@@ -24,8 +24,10 @@ export function MySection() {
                     bgPos="center"
                     bgRepeat="no-repeat"
                     bgClip="border-box"
+                    filter= "grayscale(100%)"
+                    transition="0.3s"
                     _hover={{
-                        
+                        filter: "grayscale(0%)"
                     }}
                 >
                     <Flex as="a"
@@ -37,15 +39,17 @@ export function MySection() {
                             display="flex"
                             align="center"
                             w="100%"
+                            h="100%"
                             color="#FFFFFF45"
                             fontFamily="Zilla Slab"
                             fontSize="64px"
                             alignItems="center"
                             gap="40px"
+                            transition= "01s"
                             _hover={{
                                 color: "white",
                                 ml: "16px",
-                                transition:"1s",
+                                
                             }}
                         >
                             {item.label} <Text mt="16px"><HiArrowLongRight size={40} /></Text>

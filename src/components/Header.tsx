@@ -65,6 +65,7 @@ export function Header() {
                     background: 'gray.700',
                     borderRadius: '8px',
                     textDecoration: 'none',
+                    transition: '0.3s'
                   }}
                    _hover = {{
                       background: useColorModeValue('gray.200', 'gray.700'),
