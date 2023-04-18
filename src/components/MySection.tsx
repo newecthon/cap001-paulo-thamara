@@ -1,4 +1,5 @@
-import { Flex, Image, LinkBox, Text, background } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
+import { HiArrowLongRight } from "react-icons/hi2";
 import Link from "next/link";
 
 const linksData = [
@@ -23,6 +24,9 @@ export function MySection() {
                     bgPos="center"
                     bgRepeat="no-repeat"
                     bgClip="border-box"
+                    _hover={{
+                        
+                    }}
                 >
                     <Flex as="a"
                         w="1120px"
@@ -30,17 +34,21 @@ export function MySection() {
                         align="center"
                     >
                         <Text
+                            display="flex"
+                            align="center"
                             w="100%"
                             color="#FFFFFF45"
                             fontFamily="Zilla Slab"
                             fontSize="64px"
+                            alignItems="center"
+                            gap="40px"
                             _hover={{
                                 color: "white",
                                 ml: "16px",
                                 transition:"1s",
                             }}
                         >
-                            {item.label}
+                            {item.label} <Text mt="16px"><HiArrowLongRight size={40} /></Text>
                         </Text>
                     </Flex>
                     </Flex>
