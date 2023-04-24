@@ -9,7 +9,13 @@ export default function Contact() {
             height="auto"
         >   
             <Header />
-                <Text>Contato</Text>
+                <Flex
+                    w="1120px"
+                    h="100vh"
+                    margin="0 auto"
+                >
+
+                </Flex>
             <Footer />
         </Flex>
     )

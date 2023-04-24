@@ -11,18 +11,7 @@ body {
   font-family: "Zilla Slab", serif;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
 
-.nav-link {
-  padding: '4px 16px';
-  background: 'gray';
-  border-radius: '8px';
-  text-decoration: 'none';
-  background: red;
-}
-
-.nav-link:hover {
-  background: blueviolet;
-}

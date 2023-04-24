@@ -16,13 +16,13 @@ export default function Portfolio() {
                     h="auto"
                 >
                     <Flex
-                        maxW="1440px"
+                        w="1440px"
                         h="auto"
                         flexWrap="wrap"
                         justify={{base:"center", md:"center", lg: "center"}}
                         margin="64px auto"
                         gap="16px"
-                        bg="Highlight"
+                        // bg="Highlight"
                     >
                         <Flex
                             w="348px"
