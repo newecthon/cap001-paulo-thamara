@@ -45,7 +45,7 @@ export function MySection() {
                             fontSize="64px"
                             alignItems="center"
                             gap="40px"
-                            transition= "01s"
+                            transition= "0.4s"
                             _hover={{
                                 color: "white",
                                 ml: "16px",

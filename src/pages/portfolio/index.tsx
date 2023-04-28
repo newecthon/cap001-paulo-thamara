@@ -22,7 +22,6 @@ export default function Portfolio() {
                         justify={{base:"center", md:"center", lg: "center"}}
                         margin="64px auto"
                         gap="16px"
-                        // bg="Highlight"
                     >
                         <Flex
                             w="348px"
