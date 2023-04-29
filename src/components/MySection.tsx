@@ -49,7 +49,6 @@ export function MySection() {
                             _hover={{
                                 color: "white",
                                 ml: "16px",
-                                
                             }}
                         >
                             {item.label} <Text mt="16px"><HiArrowLongRight size={40} /></Text>
